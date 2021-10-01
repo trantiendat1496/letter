@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container img {
+  width: 100%;
+}
+
+.container .content {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.container .content .child{
+  display: flex;
+}
+
+.container .content .child .background{
+  background-color:blue;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+}
+
+.container .content .child .youtube{
+  background-color: red;
+}
+
+.container .content .child .tiktok{
+  background-color: black;
+}
+
+
+
+.container .content .child i{
+  font-size: 25px;
+  color:white;
+  
+}
+
+
+
+.container .content .child .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.container .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container .button button{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 768px) {
+  .container .content {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .container .content .child{
+    margin-bottom: 10px;
+  }
+
+  .container .button {
+    font-size: 14px;
+  }
+
+  .container .content .child .background .fa-globe, .fa-envelope{
+    padding: 5px 0;
+  }
+}
